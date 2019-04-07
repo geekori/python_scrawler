@@ -1,0 +1,11 @@
+<html>
+    <head><title>index</title></head>
+    <body>
+        <a href='a.html'>first page</a>
+        <p>
+        <a href='b.html'>second page</a>
+        <p>
+        <a href='c.html'>third page</a>
+        <p>
+    </body>
+</html>
