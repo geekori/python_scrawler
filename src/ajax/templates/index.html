@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>异步加载数据</title>
+    <script src="/static/jquery.js"></script>
+</head>
+<body onload="onLoad()">
+<h1>李宁老师的视频课程</h1>
+<ul id="video_list">
+    <li>人工智能-机器学习实战</li>
+    <li>用C++和Go开发Node.js本地模块</li>
+    <li>Go Web实战视频课程</li>
+    <li>Python科学计算与图形渲染视频课程</li>
+</ul>
+<script>
+    function onLoad() {
+        $.get('/data',function(result){
+            data = JSON.parse(result)
+            for(var i = 0;i<data.length;i++) {
+                $('#video_list').append('<li>' + data[i].name + '</li>')
+            }
+        })
+    }
+
+</script>
+</body>
+</html>

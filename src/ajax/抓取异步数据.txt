@@ -1,0 +1,7 @@
+抓取异步数据
+
+requests
+
+url
+
+AJAX 异步的url
