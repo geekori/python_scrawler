@@ -1,0 +1,19 @@
+安装Selenium
+
+原来是用于测试Web应用的
+
+
+webdriver
+
+另外一个用途，抓取数据
+
+Chrome、Edge（windows 10）、Safari、firefox
+
+pip install selenium
+
+wheel
+
+https://pypi.org/project/selenium
+
+
+
