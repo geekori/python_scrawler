@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <script>
+        function onclick_form(){
+            alert(document.getElementById('name').value +
+                document.getElementById('age').value +
+                document.getElementsByName('country')[0].value+
+                document.getElementsByClassName('myclass')[0].value)
+        }
+
+    </script>
+    姓名：<input id="name"><p></p>
+    年龄：<input id="age"><p></p>
+    国家：<input name="country"><p></p>
+    收入：<input class="myclass"><p></p>
+    <button onclick="onclick_form()">提交</button>
+</body>
+</html>
